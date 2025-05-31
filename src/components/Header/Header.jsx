@@ -3,6 +3,7 @@ import "./Header.css";
 // This are the React Icons used in the Header component
 import { IoSearch } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
+import img from "../../assets/Im.png"
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
 
       <div className="userProfile-createButton">
         <button className="userProfile">
-          <img width={"35px"} height={"35px"} src="../assets/im.png" alt="icon" />
+          <img width={"35px"} height={"35px"} src={img} alt="icon" />
         </button>
 
         <button className="createButton">

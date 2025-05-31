@@ -5,13 +5,14 @@ import { FaArrowRotateLeft } from "react-icons/fa6";
 import { IoScanSharp } from "react-icons/io5";
 import { IoIosHeart } from "react-icons/io";
 import { GiLeg } from "react-icons/gi";
+import anatomyImage from "../../../../assets/Anatomy-Image.png";
 
 function AnatomySection() {
     return (
         <div className="anatomySection">
             <div className="zoomIcon"><MdOutlineZoomIn /></div>
             <div className="anatomySectionImageAndStatus">
-                <img src="../../../../assets/Anatomy-Image.png" alt="anatomySection" />
+                <img src={anatomyImage} alt="anatomySection" />
                 <div className="heart statusContainer">
                     <div className="statusContainerPosition">
                         <IoScanSharp />
