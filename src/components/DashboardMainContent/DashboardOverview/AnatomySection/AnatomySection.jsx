@@ -11,7 +11,7 @@ function AnatomySection() {
         <div className="anatomySection">
             <div className="zoomIcon"><MdOutlineZoomIn /></div>
             <div className="anatomySectionImageAndStatus">
-                <img src="public/Anatomy-Image.png" alt="anatomySection" />
+                <img src="../../../../assets/Anatomy-Image.png" alt="anatomySection" />
                 <div className="heart statusContainer">
                     <div className="statusContainerPosition">
                         <IoScanSharp />

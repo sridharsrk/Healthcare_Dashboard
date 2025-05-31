@@ -24,7 +24,7 @@ function Header() {
 
       <div className="userProfile-createButton">
         <button className="userProfile">
-          <img width={"35px"} height={"35px"} src="im.png" alt="icon" />
+          <img width={"35px"} height={"35px"} src="../assets/im.png" alt="icon" />
         </button>
 
         <button className="createButton">
