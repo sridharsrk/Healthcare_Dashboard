@@ -3,7 +3,7 @@ import "./Header.css";
 // This are the React Icons used in the Header component
 import { IoSearch } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
-import img from "../../assets/Im.png"
+import img from "../../assets/im.png"
 
 function Header() {
   return (
