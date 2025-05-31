@@ -1,13 +1,38 @@
-# React + Vite
+# React UI – Recruitment Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive UI built using **React** as part of a recruitment task. The objective was to replicate a given UI design provided as an image within a fixed time frame.
 
-Currently, two official plugins are available:
+## ⚛️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- HTML5 & JSX
+- CSS3 (Flexbox & Media Queries)
 
-## Expanding the ESLint configuration
+## 📌 Features
 
+- Responsive layout
+- Clean and modular React component structure
+- Close match to the provided UI image
+- Organized and well-commented CSS
+- Semantic HTML elements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Design Reference
+
+The UI was built based on an image shared by the recruiter. The focus was on matching:
+- Layout and alignment
+- Fonts and spacing
+- Colors and overall design
+
+Minor differences may exist due to interpretation and layout adaptation in code.
+
+## ✅ Completion Status
+
+- [x] Layout completed
+- [x] Responsive styling added
+- [x] Final polishing done (media queries, colors, structure)
+
+## 🛠️ How to Run the Project
+
+```bash
+npm install
+npm run dev   # or npm start (if using CRA)
