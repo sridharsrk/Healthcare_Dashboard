@@ -2,7 +2,7 @@ import "./HealthStatusCards.css";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import { HealthData } from "../../../../data/healthData";
+import { HealthData } from "../../../../data/HealthData";
 
 function HealthStatusCards() {
     return (
