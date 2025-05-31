@@ -1,0 +1,101 @@
+.dashboardContent {
+    position: relative;
+    top: 100px;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 300px;
+    padding: 0 0 0 30px;
+    width: 100%;
+}
+
+.dashboardContent {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    grid-template-rows: 1fr 250px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.healthConditionOverview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.healthConditionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healthConditionHeader h1 {
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+.healthConditionHeader p {
+    font-size: 14px;
+    color: var(--text-subtitle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.healthConditionHeader p span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.scheduleContainer {
+    background-color: var(--primary-bg-color);
+    padding: 20px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .dashboardContent {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .dashboardContent {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .scheduleContainer {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dashboardContent {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .healthConditionHeader h1{ 
+        font-size: 20px;
+    }
+}

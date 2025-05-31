@@ -1,0 +1,169 @@
+header {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 300px 610px 1fr;
+}
+
+
+.logo{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    padding: 30px 0;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--logo-primary);
+    cursor: pointer;
+}
+
+.logo p span {
+    color: var(--logo-secondary);
+}
+
+
+.searchBar-notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 60px;
+    width: 100%;
+}
+
+.searchBar {
+    width: 390px;
+    height: 35px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: text;
+    box-shadow: 0 0 5px 0 #e0e0e0;
+}
+
+.searchBar svg {
+    width: 25px;
+    height: 25px;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 13px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.notifications {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0 #e0e0e0;
+    border-radius: 5px;
+}
+
+.notifications svg {
+    width: 20px;
+    height: 20px;
+    color: #413aae;
+}
+
+
+.userProfile-createButton{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding: 30px 20px 30px 0;
+    background-color: var(--primary-bg-color);
+}
+
+.userProfile-createButton button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.userProfile {
+    background-color: #2cc6d2;
+}
+
+.createButton {
+    font-size: 20px;
+    background-color: var(--primary-button-bg);
+}
+
+@media screen and (max-width: 970px) {
+    .searchBar-notifications {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        justify-content: start;
+        padding: 30px 20px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    .userProfile-createButton button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .userProfile img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .createButton {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        display: flex;
+    }
+
+    .searchBar-notifications {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .logo {
+        max-width: 225px;
+    }
+}

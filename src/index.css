@@ -1,0 +1,37 @@
+:root {
+    --primary-bg-color: #f6faff;
+    
+    --logo-primary: #27cfd4;
+    --logo-secondary: #28215e;
+
+    --sidebar-link-color: rgb(192, 197, 204);
+    --sidebar-link-active: #302b66;
+    
+    --primary-button-bg: #3733b3;
+    --primary-button-text: white;
+    --secondary-button-bg: #03e0f2;
+    --secondary-button-text: #4c5697;
+
+    --text-title: #100942;
+    --text-subtitle: #9190a5;
+
+    --condition-bad-bg: #b44e4e;
+    --condition-good-bg: #7fd3c4;
+    --condition-neutral-bg: #ff7d5e;
+
+    --calendar-highlight-bg: #edf4ff;
+    --calendar-event-active-bg: #3632a6;
+    --calendar-event-bg: #acaed6;
+
+    --current-card-bg: #3733ab;
+    --upcoming-card-bg: #dce4fa;
+
+    --dashboard-action-text: #4a4c77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}

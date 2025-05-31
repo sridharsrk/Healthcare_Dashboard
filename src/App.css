@@ -1,0 +1,21 @@
+.sideBarAndDashBoardContent {
+    display: flex;
+}
+
+@media screen and (max-width: 1150px) {
+    .dashboardContent {
+        margin-left: 237px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .dashboardContent  {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .dashboardContent {
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,150 @@
+.activityFeed {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 250px;
+    max-width: 550px;
+}
+
+.activityFeedHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activityFeedHeader h3 {
+    font-size: 18px;
+    color: var(--text-title);
+}
+
+.activityFeedHeader p {
+    font-size: 13px;
+    color: var(--text-subtitle);
+}
+
+.activityFeedChart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.points {
+    display: flex;
+    height: 130px;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.point {
+    display: flex;
+    gap: 10px;
+}
+
+.point div {
+    width: 6px;
+    background-color: #dbdfe4;
+    border-radius: 300px;
+}
+
+.point-11 {
+    height: 130px;
+}
+
+.point-12{
+    height: 50px;
+    align-self: center;
+}
+
+.point-13 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent !important;
+    align-self: center;
+    position: relative;
+    top: 15px;
+}
+
+.point-131 {
+    height: 25px;
+}
+
+.point-132 {
+    height: 25px;
+}
+
+.point-14 {
+    height: 30px;
+    align-self: flex-end;
+}
+
+.point-21 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent !important;
+}
+
+.point-211 {
+    height: 50%;
+}
+
+.point-212 {
+    height: 50%;
+}
+
+.point-22 {
+    height: 50px;
+    align-self: center;
+}
+
+.point-23 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent !important;
+    align-self: center;
+    position: relative;
+    top: 15px;
+}
+
+.point-231 {
+    height: 25px;
+}
+
+.point-232 {
+    height: 25px;
+}
+
+.point-24 {
+    height: 30px;
+    align-self: flex-end;
+}
+
+
+.pointName {
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-subtitle);
+}
+
+@media screen and (max-width: 955px) {
+    .activityFeed { 
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .activityFeedHeader p {
+        width: 50%;
+    }
+}

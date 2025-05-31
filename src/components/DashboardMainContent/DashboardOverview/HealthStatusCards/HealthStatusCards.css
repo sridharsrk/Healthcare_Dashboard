@@ -1,0 +1,73 @@
+.healthStatusCardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.healthStatusCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.healthStatusCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    width: 180px;
+}
+
+.healthStatusCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.healthStatusCardHeader svg {
+    width: 30px;
+    height: 30px;
+}
+
+.healthStatusCardHeader h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+.healthStatusCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.healthStatusCardContent p {
+    font-size: 14px;
+    color: var(--text-subtitle);
+}
+
+.healthStatusBar {
+    height: 10px;
+    width: 140px;
+    background-color: #dee0eb;
+    border-radius: 30px;
+}
+
+.healthStatusBarFill {
+    height: 100%;
+    border-radius: 30px;
+    width: 80%;
+}
+
+.healthStatusCardsContainer button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 5px;
+    color: var(--dashboard-action-text);
+}

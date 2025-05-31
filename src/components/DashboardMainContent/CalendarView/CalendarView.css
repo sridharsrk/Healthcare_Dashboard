@@ -1,0 +1,203 @@
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    max-width: 550px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendarHeader h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+.calendarActionButtons{
+    display: flex;
+    gap: 10px;
+}
+
+.calendarActionButtons button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: var(--text-title);
+}
+
+.calendarBody {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 539px;
+}
+
+.calendarDay {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dayanddate { 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.calendarDayName {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+.calendarDayDate {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+.timeing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.timeing div {
+    height: 20px;
+    color: var(--text-title);
+    font-size: 14px;
+}
+
+.emptyTime {
+    position: relative;
+}
+
+.emptyTime::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--calendar-event-active-bg);
+}
+
+.calendarBody .calendarDay:nth-child(2) {
+    background-color: var(--calendar-highlight-bg);
+}
+
+.timeSlot {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px !important;
+}
+
+.time, .emptyTime {
+    display: flex;
+    height: 100% !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendarBody .calendarDay:nth-child(2) .timeing .timeSlot:nth-child(2) {
+    background-color: var(--calendar-event-active-bg);
+
+    .time{
+        color: white;
+    }
+}
+
+.calendarBody .calendarDay:nth-child(4) .timeing .timeSlot:nth-child(2) {
+    background-color: var(--calendar-event-bg);
+
+    .time{
+        color: white;
+    }
+}
+
+.calendarBody .calendarDay:nth-child(6) .timeing .timeSlot:nth-child(1) {
+    background-color: var(--calendar-event-bg);
+
+    .time{
+        color: white;
+    }
+}
+
+.calendarBody .calendarDay:nth-child(7) .timeing .timeSlot:nth-child(1) {
+    background-color: var(--calendar-event-bg);
+
+    .time{
+        color: white;
+    }
+}
+
+.currentSchedules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.scheduleCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--upcoming-card-bg);
+    border-radius: 20px;
+}
+
+.scheduleCardHeader {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.scheduleCardHeader p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.scheduleCardHeader svg {
+    width: 20px;
+    height: 20px;
+}
+
+.scheduleCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.currentSchedules .scheduleCard:nth-child(1) {
+    background-color: var(--current-card-bg);
+    color: white;
+}
+
+@media screen and (max-width: 425px) {
+    .currentSchedules {
+        width: 100%;
+        max-width: 200px;
+    }
+}

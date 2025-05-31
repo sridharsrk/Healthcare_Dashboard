@@ -1,0 +1,136 @@
+.anatomySection {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    gap: 5px;
+    position: relative;
+    height: 500px;
+}
+
+.zoomIcon {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.zoomIcon svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--sidebar-link-color);
+}
+
+.anatomySectionImageAndStatus img {
+    width: 140px;
+    height: 330px;
+}
+
+.statusContainer {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.statusContainerPosition {
+    position: relative;
+}
+
+.statusContainerPosition svg {
+    width: 35px;
+    height: 35px;
+    color: #9a92c1;
+}
+
+.lines {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 10px 5px #9a92c1;
+}
+
+.statusContainerLabel {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 25px;
+    width: 100%;
+    background-color: red;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.statusContainerLabel p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.heart {
+    top: 115px;
+    right: -45px;
+}
+
+.heart .statusContainerLabel {
+    background-color: var(--logo-secondary);
+    color: white;
+}
+
+.heart .statusContainerLabel svg {
+    color: red;
+}
+
+.leg {
+    top: 275px;
+    left: -40px;
+    flex-direction: row-reverse;
+}
+
+.leg .statusContainerLabel {
+    background-color: var(--logo-primary);
+    color: var(--secondary-button-text);
+}
+
+.leg .statusContainerLabel svg {
+    color: yellow;
+}
+
+.rotateSection {
+    position: absolute;
+    width: 80%;
+    bottom: 40px;
+}
+
+.curve {
+    transform: rotateX(40deg);
+}
+
+.rotateIcon {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotateIcon svg {
+    width: 15px;
+    height: 15px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    transform: rotateX(60deg) rotateY(-1deg);
+}

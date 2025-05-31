@@ -1,0 +1,76 @@
+.upcoming-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upcoming-schedule h2:nth-child(1) {
+    font-size: 20px;
+    color: var(--text-title);
+}
+
+.upcomingScheduleCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upcomingScheduleCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upcomingScheduleCardContainer h3:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-subtitle);
+}
+
+.upcomingScheduleCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.upcomingScheduleCard div {
+    background-color: var(--upcoming-card-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.upcomingScheduleCard div p:last-child {
+    font-size: 13px;
+}
+
+.upcomingScheduleCardHeader {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 20px !important;
+    padding: 0 !important;
+}
+
+.upcomingScheduleCardHeader p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.upcomingScheduleCardHeader svg {
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .upcoming-schedule h2:nth-child(1) {
+        font-size: 15px;
+    }
+
+    .upcomingScheduleCard div:nth-child(1) {
+        width: 100%;
+        max-width: 200px;
+    }
+}
